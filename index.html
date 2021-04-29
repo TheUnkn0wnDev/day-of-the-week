@@ -1,0 +1,19 @@
+<html>
+<head>
+<title>Day of the Week</title>	
+
+</head>
+<body>
+	<p id="text"></p>
+	
+	
+	<script>
+		var day = notDay = new Date().getDay();
+		while(day == notDay){
+		notDay = Math.floor(Math.random() * 7);
+		}
+		var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+		document.getElementById("text").innerHTML = "It's not <i>" + days[notDay] + "</i>.";
+	</script>
+</body>
+  <html>
